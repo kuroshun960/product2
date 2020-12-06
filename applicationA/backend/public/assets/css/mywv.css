@@ -1,0 +1,644 @@
+/*-----------------------------
+    基準
+-------------------------------*/
+
+html {
+
+}
+
+
+
+body{
+    background-color: #f5f5f5;
+
+    margin: 0;
+}
+
+.container{
+    height: 100%;
+    /*background: #f5f5f5;*/
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.backgroundBlur{
+    min-height: 100vh;
+}
+
+input {
+
+    color: initial;
+    background-color: initial;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+
+a {
+  text-decoration: none;
+  color: #464646;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.alert{
+    width: 90%;
+    margin: 0 auto 25px;
+}
+
+.userIconimage{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.modoruBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #dadada;
+    display: block;
+}
+
+
+.arrow_r_box{
+    width: 50px;
+}
+
+.arrow_r {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+.arrow_r:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-top: solid 2px #333;
+    border-right: solid 2px #333;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: rotate(-135deg);
+}
+
+
+
+/*-----------------------------
+    ナビゲーションバー類
+-------------------------------*/
+
+    .mywv_artistIcon{
+        
+        width: 50px;
+        height: 50px;
+
+    }
+    
+    .navUsername{
+        margin-right: 10px;
+    }
+
+
+    nav{
+        background-color: #fff;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .headerMywvLogo{
+        color: #464646;
+        font-weight: bold; 
+        font-size: 24px;
+    }
+    
+    .nav-item-Mywv a{
+        color: #464646;
+        font-weight: bold; 
+    }
+    
+    /*
+    .dropdown-menu{
+        background-color: #C4C4C4;
+    }
+    */
+    
+    .nav-item-Mywv-drop a{
+        color: #464646;
+    }
+        
+    .navbar-toggler{
+        border-color: #000;
+    }
+    
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    
+    .mywvNavbar{
+        border-bottom: 1px solid #464646;
+    }
+    
+    .dropdown-menu{
+        border-radius: 0;
+    }
+    
+    .dropdown-toggle::after{
+        display: none;
+    }
+    
+    
+/*-----------------------------
+    ユーザー詳細ページ
+-------------------------------*/
+    
+    
+    .userdetails_container_inner{
+
+    }
+    
+    .akawaku{
+        border: solid 2px #ffd3d3;
+    }
+    
+    .userTimeline{
+        font-size: 24px;
+        font-weight: 600;
+        padding-left: 10px
+    }
+    
+    .artistList{
+        margin-top: 20px;
+    }
+    
+    .artistPanel{
+        width:180px;
+        height:180px;
+        background-color: #C4C4C4;
+        border-radius: 10px;
+        margin: 0px 10px;
+        overflow: hidden;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .artistList__row{
+        margin: 0;
+    }
+    
+    .artistList__row__items .wappen{
+        position: relative;
+    }
+    
+    .artistList__row__items .wappen:before{
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 10px;
+        transform: translate(0%, 0%);
+        z-index: 2;
+        border-style: solid;
+        border-width: 35px 35px 0 0;
+        border-color: #e0006c transparent transparent transparent;
+        content: "";
+        
+    }
+    
+        .artistList__row__items .wappen:after{
+        position: absolute;
+        display: inline-block;
+        font-size: 5px;
+        line-height: 1;
+        font-weight: bold;
+        top: 5px;
+        left: 12px;
+        transform: translate(0%, 0%);
+        transform: rotate(-45deg);
+        z-index: 3;
+        content: "my";
+        color: #fff;
+    }
+    
+    .artistList__row__items p{
+        text-align: center;
+    }
+    
+    .artistPanel__add{
+        width:180px;
+        height:180px;
+        border: solid #C4C4C4 2px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0px 10px;
+        display: block;
+        box-sizing: border-box;
+        position: relative;
+	    align-items: center;
+    }
+    
+    .artistPanel__add:before{
+        position: absolute;
+        display: inline-block;
+        top: 26%;
+        left: 40%;
+        z-index: 2;
+        font-size: 54px;
+        color: #C4C4C4;
+        border-color: #007bff transparent transparent transparent;
+        content: "+";
+        
+    }
+    
+
+    
+    .artistPanel__add p{
+        text-align: center;
+        color: #C4C4C4;
+        font-size: 52px;
+        margin: 0 auto;
+    }
+    
+    .alignItemsCenter{
+        align-items: center;    
+    }
+    
+    .artistTags{
+        color: #727272;
+    }
+    
+    .userfollowBtn{
+        background-color: #E0006C;
+        width: 120px;
+        height: 40px;
+        margin-left: 30px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .userfollowBtn a{
+        color: #fff;
+    }
+    
+    .userfollowBtn p{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .userfollowBtn__unfollow{
+        
+    }
+    
+    .userfollowBtn__follow{
+        background-color: rgba(0,0,0,0);
+        border: solid 2px #E0006C;
+        color: #E0006C;
+    }
+    
+/*-----------------------------
+    ユーザーリスト
+-------------------------------*/
+    
+    .usersList{
+        margin-top: 20px;
+    }
+    
+    .media-body p{
+        line-height: 40px;
+    }
+    
+    .user_col img,.user_col div{
+    display: inline-block;
+    
+}
+    
+    
+/*-----------------------------
+    アーティスト詳細ページ
+-------------------------------*/
+    
+    .descriptionArea{
+        background-color: #F1F1F1;
+        border-radius: 5px;
+        padding: 50px 50px;
+        margin-top: 30px;
+
+    }
+    
+    .artistStyle p{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .artistDescription p{
+        font-size: 16px;
+        
+    }
+    
+    .snsUrl p{
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .artistEditBtn{
+        background-color: #E0006C;
+        height: 30px;
+        margin: 0 0 0 auto;
+        padding: 0 20px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .artistEditBtn a{
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .artistDeleteBtn {
+        background-color: #E0006C;
+        height: 30px;
+        margin: 20px 0 0 auto;
+        padding: 0 20px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .artistDeleteBtn a{
+        font-size: 14px;
+        color: #fff;
+    }
+    
+
+/*-----------------------------
+    タグ
+-------------------------------*/
+    
+    .phoneusericon{
+        display: none;
+    }
+    
+    .tagAddbtn{
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        background-color: #E0006C;
+        margin-left: 10px;
+        
+        justify-content: center; /*左右中央揃え*/
+        align-items: center;     /*上下中央揃え*/
+    }
+    
+    .tagAddbtn p{
+        text-align: center;
+        font-size: 18px;
+        line-height: 18px;
+        color: #fff;
+        margin: 0;
+    }
+    
+    .tagAddbtn p a{
+
+        color: #fff;
+    }
+    
+    .tagAddbtn__Frex{
+        align-items: center;
+    }
+    
+    .tagaddList{
+        padding: 40px 0 20px;
+    }
+    
+    .tagaddList__inner{
+        margin: 0 auto;
+        height: 50px;
+
+    }
+    
+    .tagaddList__items{
+        justify-content: space-between;
+    }
+    
+    .tagaddList_tagname p{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    
+    .tagDeleteBtn {
+        margin-left: 50px;
+        background-color: #E0006C;
+        height: 30px;
+        padding: 0 20px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .tagDeleteBtn input{
+        color: #fff;
+    }
+    
+    
+    
+/*-----------------------------
+    作品詳細ページ
+-------------------------------*/
+    
+    .workshow{
+        margin-top: 30px
+    }
+    
+    .workshowImage{
+        max-width: 30%;
+        
+    }
+    
+    .workDescriptionArea{
+        background-color: #F1F1F1;
+        border-radius: 5px;
+        width: 70%;
+        padding: 50px 50px;
+        margin-left: 20px;
+        
+    }
+    
+    .workshow_title{
+
+    }
+    
+
+    
+    .workshow_title_text{
+        width: 300px;
+    }
+    
+    
+    
+/*-----------------------------
+    ログイン前ページ
+-------------------------------*/    
+    
+
+    
+    .beforeLogincontainer{
+        width: 95%;
+        height: 600px;
+        padding: 200px 0 0 0;
+        background-color: #f5f5f5;
+        margin: 0 auto;
+    }
+    
+    .userRegistArea{
+           
+    }
+    
+    .userRegistBtn{
+        background-color: #E0006C;
+        width: 300px;
+        height: 40px;
+        margin: 30px auto 0;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .userRegistBtn a{
+        color: #fff;
+    }
+    
+    .userRegistBtn p{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    
+/*-----------------------------
+    ログインページ
+-------------------------------*/   
+
+.form-control {
+
+    background-color: #c4c4c4;
+    border: none;
+}
+
+    .loginBtn{
+        background-color: #E0006C;
+        width: 100%;
+        height: 40px;
+        margin: 30px auto 0;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .loginBtn a{
+        color: #fff;
+    }
+    
+    .login p{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .offset-sm-3 {
+        margin: 20px auto 0;
+    }
+    
+    .dropdown-menu{
+        background-color: #c4c4c4;
+    }
+    .dropdown-item > a{
+        color: #fff;
+    }
+
+
+
+
+/*-----------------------------
+    add css
+-------------------------------*/
+    
+.marginZeroauto{
+    
+}
+
+.dropdown-menu{
+    
+    border: initial;
+}
+
+.fa-twitter{
+    
+}
+
+.form-control {
+
+    color: #fff;
+}
+
+
+
+.phone_followcount{
+    margin-top: 10px;
+    height: 20px;
+    text-align: center;
+    display:none;
+}
+
+.phone_followcount div{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.notUser{
+    text-align: center;
+    font-size: 14px
+}
+
+.notUser a{
+    color: #E0006C;
+    font-size: 14px
+}
+
+
+.descriptionArea {
+    padding: 50px 50px;
+    margin-top: 30px;
+    background-color: rgba(255,255,255,0.5);
+}

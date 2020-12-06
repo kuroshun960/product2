@@ -11,12 +11,13 @@
 
     <body>
 
-        {{-- ナビゲーションバー --}}
+        {{-- ナビゲーションバー 
         @include('commons.navbar')
-
+        --}}
         
-            {{-- エラーメッセージ --}}
+            {{-- エラーメッセージ 
             @include('commons.error_messages')
+            --}}
 
             @yield('content')
         
