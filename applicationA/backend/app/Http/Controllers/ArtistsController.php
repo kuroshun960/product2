@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 //S3用に追記//
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use App\Artist;
-use App\User;
+use App\Models\Artist;
+use App\Models\User;
 
 class ArtistsController extends Controller
 {

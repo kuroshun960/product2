@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 //ここでは、Userモデルのモデル操作をするので、あらかじめ名前空間をUserに設定しておく
-use App\User;
+use App\Models\User;
 
 class UsersController extends Controller
 {

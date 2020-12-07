@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Artist;
-use App\Tag;
+use App\Models\Artist;
+use App\Models\Tag;
 
 class TagsController extends Controller
 {
