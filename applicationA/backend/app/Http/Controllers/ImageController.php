@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 //S3用に追記//
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
-use App\Artist;
+use App\Models\Artist;
 
 class ImageController extends Controller
 {
