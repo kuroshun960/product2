@@ -20,8 +20,9 @@
                     {{--{!! link_to_route('signup.get','登録する',[],['class'=>'userRegistBtn']) !!}</div>--}}
             </div>
         </div>
+        
     </div>
-    
+
 
     {{--@endif--}}
     
