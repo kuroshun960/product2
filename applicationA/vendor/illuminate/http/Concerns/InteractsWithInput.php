@@ -482,7 +482,6 @@ trait InteractsWithInput
     /**
      * Dump the items.
      *
-     * @param  array  $keys
      * @return $this
      */
     public function dump($keys = [])
