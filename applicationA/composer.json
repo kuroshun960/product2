@@ -1,5 +1,6 @@
 {
     "require": {
-        "laravelcollective/html": "^6.2"
+        "laravelcollective/html": "^6.2",
+        "league/flysystem-aws-s3-v3": "~1.0"
     }
 }
