@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../../ドキュメント/kuroshun/product2"
+		}
+	],
+	"settings": {
+		"terminal.integrated.splitCwd": "inherited"
+	}
+}
